@@ -1,0 +1,89 @@
+.single {
+    display: flex;
+    width: 100%;
+
+    .singleContainer {
+        flex: 6;
+
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .left {
+                flex: 1;
+                padding: 20px;
+                position: relative;
+                //https://html-css-js.com/css/generator/box-shadow/
+                -webkit-box-shadow: 5px 5px 18px 9px rgba(124, 27, 242, 0.79);
+                box-shadow: 5px 5px 18px 9px rgba(124, 27, 242, 0.79);
+
+
+                .editButtom {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    font-size: 12px;
+                    cursor: pointer;
+                    color: rgb(116, 26, 226);
+                    background-color: rgba(124, 27, 242, 0.205);
+                    border-radius: 0px 0px 0px 10px;
+                }
+
+
+                .item {
+                    display: flex;
+                    gap: 20px;
+
+                    .itemImg {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 50%;
+                    }
+
+                    .details {
+                        .itemTitle {
+                            margin-bottom: 10px;
+                            color: rgb(94, 88, 88);
+                        }
+
+                        .detailItem {
+                            margin-bottom: 8px;
+                            font-size: 14px;
+
+                            .itemKey {
+                                font-weight: bold;
+                                color: rgb(94, 88, 88);
+                                padding-right: 5px;
+                            }
+
+                            .itemValue {
+                                font-weight: 300;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+            }
+        }
+
+        .bottom {
+            margin: 10px 20px;
+            padding: 20px;
+            //https://html-css-js.com/css/generator/box-shadow/
+            -webkit-box-shadow: 5px 5px 18px 9px rgba(124, 27, 242, 0.79);
+            box-shadow: 5px 5px 18px 9px rgba(124, 27, 242, 0.79);
+        }
+
+        .title {
+            font-size: 16px;
+            color: rgb(167, 152, 152);
+            margin-bottom: 20px;
+        }
+    }
+}

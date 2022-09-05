@@ -1,0 +1,16 @@
+.chart {
+    flex: 4;
+    padding: 10px;
+    color: gray;
+    //https://html-css-js.com/css/generator/box-shadow/
+    -webkit-box-shadow: 5px 5px 18px 9px rgba(124, 27, 242, 0.79);
+    box-shadow: 5px 5px 18px 9px rgba(124, 27, 242, 0.79);
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .chartGrid {
+        stroke: rgb(228, 225, 225);
+    }
+}

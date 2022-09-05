@@ -1,0 +1,60 @@
+import mongoose from 'mongoose';
+
+
+const HotelSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    //hotel, apartment, studio...
+    type: {
+        type: String,
+        required: true
+    },
+    city: {
+        type: String,
+        required: true
+    },
+    address: {
+        type: String,
+        required: true
+    },
+    distance: {
+        type: String,
+        required: true
+    },
+    photos: {
+        type: [String],
+    },
+    title: {
+        type: String,
+        required: true
+    },
+    //description
+    desc: {
+        type: String,
+        required: true
+    },
+    //stars
+    rating: {
+        type: Number,
+        min: 0,
+        max: 5
+    },
+    rooms: {
+        type: [String],
+    },
+    cheapestPrice: {
+        type: Number,
+        required: true
+    },
+    featured: {
+        type: Boolean,
+        required: false,
+    },
+});
+
+
+export default mongoose.model("Hotel", HotelSchema);
+
+
